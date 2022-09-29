@@ -5,7 +5,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Circle color='blue' size='100' speed='1000' animation='linear' />
-			<Spinner color='green' borderWidth='10' size='100' />
+			<Spinner color='green' borderWidth='10' size='100' speed='1100' />
 		</div>
 	);
 }
