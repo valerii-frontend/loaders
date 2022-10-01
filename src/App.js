@@ -1,5 +1,5 @@
-import { Circle } from "./components/Circle";
-import { Spinner } from "./components/Spinner";
+import Circle from "./components/Circle";
+import Spinner from "./components/Spinner";
 import Bars from "./components/Bars";
 
 function App() {

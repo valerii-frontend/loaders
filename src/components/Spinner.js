@@ -29,7 +29,7 @@ const SpinnerStyled = styled.div`
 	}
 `;
 
-export function Spinner({ color, borderWidth, size, speed }) {
+export default function Spinner({ color, borderWidth, size, speed }) {
 	return (
 		<SpinnerStyled color={color} borderWidth={borderWidth} size={size} speed={speed}>
 			<span></span>
