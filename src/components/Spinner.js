@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SpinnerStyled = styled.div`
+const SpinnerStyled = styled.div`
 	--size: ${({ size }) => (size >= 50 && size <= 200 ? size : 100)}px;
 	--border-width: ${({ borderWidth }) => (borderWidth >= 1 && borderWidth <= 50 ? borderWidth : 5)}px;
 	--speed: ${({ speed }) => (speed >= 500 && speed <= 3000 ? speed : 1200)}ms;
