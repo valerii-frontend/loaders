@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const BarsStyled = styled.div`
-	--size: ${({ size }) => (size >= 50 && size <= 200 ? size : 100)}px;
-	--width: ${({ barWidth }) => (barWidth >= 5 && barWidth <= 15 ? barWidth : 5)}px;
+	--size: ${({ size }) => (size === "sm" ? 50 : size === "md" ? 100 : size === "lg" ? 150 : 100)}px;
+	--width: ${({ _width }) => (_width >= 5 && _width <= 15 ? _width : 5)}px;
 	--color: ${({ color }) => color || "white"};
 	--speed: ${({ speed }) => (speed >= 500 && speed <= 2000 ? speed : 1000)}ms;
 	display: flex;
@@ -51,10 +51,10 @@ const BarsStyled = styled.div`
 	}
 `;
 
-export default function Bars({ color, barWidth, size, count, speed }) {
+export default function Bars({ color, _width, size, count, speed }) {
 	let childs = [..."s".repeat(count >= 3 && count <= 7 ? count : 3)];
 	return (
-		<BarsStyled color={color} barWidth={barWidth} size={size} speed={speed}>
+		<BarsStyled color={color} _width={_width} size={size} speed={speed}>
 			{childs.map((s, i) => (
 				<span key={i}></span>
 			))}

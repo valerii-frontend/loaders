@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const SpinnerStyled = styled.div`
-	--size: ${({ size }) => (size >= 50 && size <= 200 ? size : 100)}px;
-	--border-width: ${({ borderWidth }) => (borderWidth >= 1 && borderWidth <= 50 ? borderWidth : 5)}px;
+	--size: ${({ size }) => (size === "sm" ? 50 : size === "md" ? 100 : size === "lg" ? 150 : 100)}px;
+	--border-width: ${({ _width }) => (_width >= 1 && _width <= 50 ? _width : 5)}px;
 	--speed: ${({ speed }) => (speed >= 500 && speed <= 3000 ? speed : 1200)}ms;
 	height: var(--size);
 	width: var(--size);
@@ -29,9 +29,9 @@ const SpinnerStyled = styled.div`
 	}
 `;
 
-export default function Spinner({ color, borderWidth, size, speed }) {
+export default function Spinner({ color, _width, size, speed }) {
 	return (
-		<SpinnerStyled color={color} borderWidth={borderWidth} size={size} speed={speed}>
+		<SpinnerStyled color={color} _width={_width} size={size} speed={speed}>
 			<span></span>
 			<span></span>
 			<span></span>
