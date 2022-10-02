@@ -17,21 +17,22 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	min-height: 100vh;
-	gap: 3rem;
 }
 .preview {
 	display: flex;
 	justify-content: center;
-	gap: 3rem;
+	align-items: center;
+	gap: 30px;
 }
 .titles {
 	display: flex;
 	justify-content: center;
 	flex: 0 0 100%;
 	height: 30px;
-	gap: 3rem;
+	gap: 30px;
+	margin-bottom: 50px;
 }
-.titles span {
+.titles div {
 	flex: 0 0 100px;
 	text-align: center;
 	color: white;
