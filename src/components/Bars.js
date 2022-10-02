@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BarsStyled = styled.div`
 	--size: ${({ size }) => (size === "sm" ? 50 : size === "md" ? 100 : size === "lg" ? 150 : 100)}px;
 	--width: ${({ _width }) => (_width >= 5 && _width <= 15 ? _width : 5)}px;
-	--color: ${({ color }) => color || "white"};
+	--color: ${({ color }) => color};
 	--speed: ${({ speed }) => (speed >= 500 && speed <= 2000 ? speed : 1000)}ms;
 	display: flex;
 	flex-direction: row;
@@ -23,7 +23,7 @@ const BarsStyled = styled.div`
 	}
 	& span {
 		width: var(--width);
-		background-color: var(--color);
+		background-color: var(--color, white);
 		margin-right: var(--width);
 		animation: bars var(--speed) ease-in-out infinite;
 		--delay: 0.15s;

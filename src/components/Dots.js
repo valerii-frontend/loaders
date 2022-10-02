@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 const DotsStyled = styled.div`
+	--size: ${({ size }) => (size === "sm" ? 15 : size === "md" ? 30 : size === "lg" ? 45 : 30)}px;
+	--speed: ${({ speed }) => (speed >= 500 && speed <= 3000 ? speed : 1500)}ms;
+	--color: ${({ color }) => color || "white"};
 	display: flex;
 	gap: 10px;
 	height: 75px;
 	--delay: 0.15s;
 	span {
-		height: 30px;
-		width: 30px;
+		height: var(--size);
+		width: var(--size);
 		border-radius: 50%;
-		animation: balls 1.5s ease-in-out infinite;
+		animation: balls var(--speed) ease-in-out infinite;
 		&:nth-child(1) {
 			animation-delay: var(--delay);
 		}

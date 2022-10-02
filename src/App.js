@@ -15,7 +15,7 @@ function App() {
 			<div className='preview'>
 				<Circle color='hsl(0,50%,70%)' size='md' speed='1000' />
 				<Spinner color='hsl(36,50%,70%)' _width='7' size='md' speed='1100' />
-				<Bars color='hsl(72,50%,70%)' _width={5} size='md' count={5} speed='1000' />
+				<Bars color='hsl(72,50%,70%)' _width={5} size='md' count={5} speed='1500' />
 				<Dots />
 			</div>
 		</div>
