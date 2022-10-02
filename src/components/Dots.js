@@ -44,7 +44,7 @@ const DotsStyled = styled.div`
 `;
 
 export default function Dots({ size, speed, color, count }) {
-	let childs = [..."s".repeat(count >= 3 && count <= 5 ? count : 3)];
+	let childs = [..."s".repeat(count >= 2 && count <= 5 ? count : 3)];
 	return (
 		<DotsStyled size={size} speed={speed} color={color}>
 			{childs.map((s, i) => (
