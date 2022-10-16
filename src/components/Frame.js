@@ -28,6 +28,14 @@ const FrameStyled = styled.div`
 	& span:nth-child(3) {
 		animation-delay: calc(-1 * var(--speed) / 8);
 	}
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
 `;
 
 export default function Frame({ color, _width, size, speed }) {

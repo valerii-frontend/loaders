@@ -17,17 +17,17 @@ const BallanceStyled = styled.div`
 		border-style: solid;
 		border-radius: 50%;
 		border-color: var(--color, white) transparent;
-		animation: load var(--speed) ease-in-out infinite;
-	}
-	@keyframes load {
-		0% {
-			transform: rotate(0deg);
-		}
-		50% {
-			transform: rotate(180deg);
-		}
-		100% {
-			transform: rotate(-180deg);
+		animation: ballance var(--speed) ease-in-out infinite;
+		@keyframes ballance {
+			0% {
+				transform: rotate(0deg);
+			}
+			50% {
+				transform: rotate(180deg);
+			}
+			100% {
+				transform: rotate(-180deg);
+			}
 		}
 	}
 `;
