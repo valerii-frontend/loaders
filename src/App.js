@@ -62,7 +62,7 @@ function App() {
 				<div className='col'>
 					<h2>Text</h2>
 					<div>
-						<Text color='hsl(144,50%,50%)' size='sm' speed='1500' text='Loading...' uppercase />
+						<Text color='hsl(144,50%,50%)' size='md' speed='1500' text='Loading' uppercase />
 					</div>
 				</div>
 			</div>
