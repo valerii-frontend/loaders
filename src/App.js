@@ -5,6 +5,7 @@ import Dots from "./components/Dots";
 import Card from "./components/Card";
 import Ring from "./components/Ring";
 import Text from "./components/Text";
+import Ballance from "./components/Ballance";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<div>Card</div>
 				<div>Ring</div>
 				<div style={{ flex: "0 0 130px" }}>Text</div>
+				<div>Ballance</div>
 			</div>
 			<div className='preview'>
 				<Circle color='hsl(0,50%,70%)' size='md' speed='1000' />
@@ -26,6 +28,7 @@ function App() {
 				<Card color='hsl(252,50%,70%)' color2='hsl(180,70%,50%)' size='md' speed='1200' />
 				<Ring color='hsl(216,50%,80%)' size='md' speed='2000' _width={10} />
 				<Text color='hsl(144,50%,50%)' size='sm' speed='1200' text='Loading...' uppercase />
+				<Ballance color='hsl(288,70%,70%)' size='md' speed='1500' />
 			</div>
 		</div>
 	);
