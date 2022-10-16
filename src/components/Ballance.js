@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const BallanceStyled = styled.div`
@@ -31,7 +30,4 @@ const BallanceStyled = styled.div`
 		}
 	}
 `;
-
-export default function Ballance({ color, size, speed }) {
-	return <BallanceStyled color={color} size={size} speed={speed} />;
-}
+export default BallanceStyled;
