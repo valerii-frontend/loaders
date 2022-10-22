@@ -8,6 +8,7 @@ import Text from "./components/Text";
 import Ballance from "./components/Ballance";
 import Scale from "./components/Scale";
 import Pulse from "./components/Pulse";
+import Whirlpool from "./components/Whirlpool";
 
 function App() {
   return (
@@ -70,6 +71,12 @@ function App() {
           <h2>Text</h2>
           <div>
             <Text color='hsl(144,50%,50%)' size='md' speed='1500' text='Loading' uppercase />
+          </div>
+        </div>
+        <div className='col'>
+          <h2>Whirlpool</h2>
+          <div>
+            <Whirlpool color='yellow' color2='cyan' color3='orangered' size='md' speed='2500' />
           </div>
         </div>
       </div>
