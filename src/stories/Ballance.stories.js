@@ -1,7 +1,7 @@
 import Ballance from "../components/Ballance";
 
 export default {
-  title: "Ballance animation",
+  title: "Loaders/Ballance",
   component: Ballance,
   argTypes: {
     size: {
@@ -15,6 +15,6 @@ export default {
   },
 };
 
-export const Primary = (args) => {
+export const BallanceLoader = (args) => {
   return <Ballance color='black' {...args} />;
 };
