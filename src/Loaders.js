@@ -389,8 +389,8 @@ const WhirlpoolStyled = styled.div`
   --size: ${({ size }) => (size === "sm" ? 50 : size === "md" ? 100 : size === "lg" ? 150 : 100)}px;
   --speed: ${({ speed }) => (speed >= 1500 && speed <= 3500 ? speed : 1500)}ms;
   --color: ${({ color }) => color};
-  --color2: ${({ color, color2 }) => color2 ?? color};
-  --color3: ${({ color, color3 }) => color3 ?? color};
+  --color2: ${({ color, color2 }) => (color2 === "" || color2 === null ? color : color2)};
+  --color3: ${({ color, color3 }) => (color3 === "" || color3 === null ? color : color3)};
   width: var(--size);
   height: var(--size);
   position: relative;
