@@ -2,17 +2,17 @@ import App from "../App";
 import "../index.css";
 
 export default {
-  title: "Preview",
+  title: "All Components Preview",
   component: App,
   parameters: {
-    docs: {
-      description: {
-        component: "All loaders preview",
-      },
+    previewTabs: {
+      "storybook/docs/panel": { hidden: true },
+      "canvas": { hidden: true },
     },
+    viewMode: "story",
   },
 };
 
-export const Preview = (args) => {
+export const AllComponentsPreview = (args) => {
   return <App {...args} />;
 };

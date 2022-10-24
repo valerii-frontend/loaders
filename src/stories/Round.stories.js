@@ -45,6 +45,11 @@ export default {
     },
   },
   parameters: {
+    viewMode: "docs",
+    previewTabs: {
+      "storybook/docs/panel": { hidden: true },
+      canvas: { hidden: true },
+    },
     docs: {
       description: {
         component: "Round loader component preview and props description",
