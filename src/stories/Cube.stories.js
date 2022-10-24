@@ -1,25 +1,24 @@
-import { Scale } from "../Loaders";
+import { Cube } from "../Loaders";
 
 export default {
   title: "Components",
-  component: Scale,
+  component: Cube,
   argTypes: {
     size: {
       options: ["sm", "md", "lg"],
       control: { type: "radio" },
-      defaultValue: "sm",
+      defaultValue: "md",
       description: "Loader size",
       table: {
-        defaultValue: { summary: "sm" },
+        defaultValue: { summary: "md" },
         type: { summary: null },
       },
     },
     color: {
-      defaultValue: "black",
+      defaultValue: "green",
       control: {
         type: "color",
       },
-
       table: {
         defaultValue: { summary: "white" },
         type: { summary: "EXAMPLE: black, rgba(0,0,0,50%), #000, hsl(324,60%,80%)" },
@@ -27,7 +26,7 @@ export default {
       description: "Loader color, support is every CSS color format",
     },
     color2: {
-      defaultValue: "black",
+      defaultValue: "green",
       control: {
         type: "color",
       },
@@ -36,14 +35,14 @@ export default {
         defaultValue: { summary: "white" },
         type: { summary: "OPTIONAL! If don't set it will be the same as the first color" },
       },
-      description: "Loader second color, support is every CSS color format",
+      description: "Loader fill color, support is every CSS color format",
     },
     speed: {
-      control: { type: "range", min: 500, max: 4000, step: 100 },
-      defaultValue: 2000,
-      description: "Animation speed from `500ms` to `4000ms`",
+      control: { type: "range", min: 1500, max: 5000, step: 100 },
+      defaultValue: 2500,
+      description: "Animation speed from `1500` to `5000` ms",
       table: {
-        defaultValue: { summary: 2000 },
+        defaultValue: { summary: 2500 },
         type: { summary: null },
       },
     },
@@ -56,12 +55,12 @@ export default {
     },
     docs: {
       description: {
-        component: "Scale loader component preview and props description",
+        component: "Cube loader component preview and props description",
       },
     },
   },
 };
 
-export const ScaleAnimation = (args) => {
-  return <Scale {...args} />;
+export const CubeAnimation = (args) => {
+  return <Cube {...args} />;
 };

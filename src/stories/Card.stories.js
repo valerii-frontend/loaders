@@ -33,7 +33,7 @@ export default {
 
       table: {
         defaultValue: { summary: "white" },
-        type: { summary: "Optional!If don't set it will be the same as first color" },
+        type: { summary: "OPTIONAL! If don't set it will be the same as the first color" },
       },
       description: "Loader second color, support is every CSS color format",
     },
