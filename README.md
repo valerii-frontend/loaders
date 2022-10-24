@@ -4,21 +4,25 @@
 
 - `size`
 
-  - **sm** - small size (50px)
+  - **sm** - small size
 
-  - **md** - medium size (100px) `// default`
+  - **md** - medium size `// mostly default`
 
-  - **lg** - large size (150px)
+  - **lg** - large size
 
-- `speed` (animation speed) - **number** from **500** to **3000**
+- `speed` (animation speed) - **number** from **500** to **3000** ms (sometimes a little bit different)
 
-- `color`
+- `color` (color2,color3 with the same rules)
 
   - **red** - HTML colors `// default white`
 
   - **#000** - HEX colors
 
   - **rgba(100,100,100,0.5)** - RGBA, RGB, HSL etc.
+
+- `_width` (border-width) - **number** in pixels
+
+- `count` (elements count) - optional **number**
 
 ## **Library preview**
 
