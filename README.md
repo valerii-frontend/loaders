@@ -24,6 +24,8 @@
 
 - `count` (elements count) - optional **number**
 
-## **Library preview**
+## **Preview**
 
 ![image](./preview-anim.gif)
+
+[LIVE PREVIEW](https://valerii-frontend.github.io/loaders/)
