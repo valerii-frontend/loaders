@@ -1,15 +1,4 @@
-import Circle from "./components/Circle";
-import Frame from "./components/Frame";
-import Bars from "./components/Bars";
-import Dots from "./components/Dots";
-import Card from "./components/Card";
-import Ring from "./components/Ring";
-import Text from "./components/Text";
-import Ballance from "./components/Ballance";
-import Scale from "./components/Scale";
-import Pulse from "./components/Pulse";
-import Whirlpool from "./components/Whirlpool";
-import Cube from "./components/Cube";
+import { Circle, Round, Bars, Dots, Card, Ring, Text, Ballance, Scale, Pulse, Whirlpool, Cube } from "./Loaders";
 
 function App() {
   return (
@@ -21,9 +10,9 @@ function App() {
           <Circle color='hsl(0,50%,70%)' size='md' speed='1000' />
         </div>
         <div className='col'>
-          <h2>Frame</h2>
+          <h2>Round</h2>
           <div>
-            <Frame color='hsl(36,50%,70%)' _width={7} size='md' speed='1100' />
+            <Round color='hsl(36,50%,70%)' _width={7} size='md' speed='1100' />
           </div>
         </div>
         <div className='col'>

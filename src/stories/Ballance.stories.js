@@ -1,4 +1,4 @@
-import Ballance from "../components/Ballance";
+import Ballance from "../Loaders";
 
 export default {
   title: "Loaders/Ballance",
