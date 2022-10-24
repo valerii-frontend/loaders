@@ -1,7 +1,7 @@
 import { Bars } from "../Loaders";
 
 export default {
-  title: "Loaders/Bars",
+  title: "Components",
   component: Bars,
   argTypes: {
     size: {
@@ -62,6 +62,6 @@ export default {
   },
 };
 
-export const BarsLoader = (args) => {
+export const BarsAnimation = (args) => {
   return <Bars {...args} />;
 };

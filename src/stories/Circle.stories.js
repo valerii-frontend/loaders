@@ -1,7 +1,7 @@
 import { Circle } from "../Loaders";
 
 export default {
-  title: "Loaders/Circle",
+  title: "Components",
   component: Circle,
   argTypes: {
     size: {
@@ -44,6 +44,6 @@ export default {
   },
 };
 
-export const CircleLoader = (args) => {
+export const CircleAnimation = (args) => {
   return <Circle {...args} />;
 };

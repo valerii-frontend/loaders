@@ -2,7 +2,7 @@ import App from "../App";
 import "../index.css";
 
 export default {
-  title: "Full preview/Loaders",
+  title: "Preview",
   component: App,
   parameters: {
     docs: {

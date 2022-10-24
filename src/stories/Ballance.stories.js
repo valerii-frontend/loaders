@@ -1,7 +1,7 @@
 import { Ballance } from "../Loaders";
 
 export default {
-  title: "Loaders/Ballance",
+  title: "Components",
   component: Ballance,
   argTypes: {
     size: {
@@ -44,6 +44,6 @@ export default {
   },
 };
 
-export const BallanceLoader = (args) => {
+export const BallanceAnimation = (args) => {
   return <Ballance {...args} />;
 };
