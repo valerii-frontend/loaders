@@ -296,7 +296,7 @@ const RingStyled = styled.div`
 `;
 const ScaleStyled = styled.div`
   --size: ${({ size }) => (size === "sm" ? 50 : size === "md" ? 75 : size === "lg" ? 100 : 50)}px;
-  --speed: ${({ speed }) => (speed >= 500 && speed <= 3000 ? speed : 1200)}ms;
+  --speed: ${({ speed }) => (speed >= 500 && speed <= 4000 ? speed : 2000)}ms;
   --color: ${({ color }) => color};
   --color2: ${({ color2 }) => color2};
   width: var(--size);
