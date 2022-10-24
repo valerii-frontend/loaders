@@ -1,8 +1,8 @@
-import { Round } from "../Loaders";
+import { Ring } from "../Loaders";
 
 export default {
   title: "Components",
-  component: Round,
+  component: Ring,
   argTypes: {
     size: {
       options: ["sm", "md", "lg"],
@@ -27,19 +27,19 @@ export default {
     },
     speed: {
       control: { type: "range", min: 500, max: 3000, step: 100 },
-      defaultValue: 1200,
+      defaultValue: 1500,
       description: "Animation speed from `500ms` to `3000ms`",
       table: {
-        defaultValue: { summary: 1200 },
+        defaultValue: { summary: 1500 },
         type: { summary: null },
       },
     },
     _width: {
-      control: { type: "range", min: 1, max: 50, step: 1 },
-      defaultValue: 5,
-      description: "Border width value from `1` to `50` px",
+      control: { type: "range", min: 2, max: 20, step: 1 },
+      defaultValue: 7,
+      description: "Border width from `2` to `20` pixels",
       table: {
-        defaultValue: { summary: 5 },
+        defaultValue: { summary: 7 },
         type: { summary: null },
       },
     },
@@ -52,12 +52,12 @@ export default {
     },
     docs: {
       description: {
-        component: "Round loader component preview and props description",
+        component: "Ring loader component preview and props description",
       },
     },
   },
 };
 
-export const RoundAnimation = (args) => {
-  return <Round {...args} />;
+export const RingAnimation = (args) => {
+  return <Ring {...args} />;
 };

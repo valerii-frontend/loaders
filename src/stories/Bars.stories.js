@@ -39,7 +39,7 @@ export default {
       },
       table: {
         defaultValue: { summary: "white" },
-        type: { summary: "EXAMPLE: black, rgba(0,0,0,50%), #000" },
+        type: { summary: "EXAMPLE: black, rgba(0,0,0,50%), #000, hsl(324,60%,80%)" },
       },
       description: "Loader color, support is every CSS color format",
     },
