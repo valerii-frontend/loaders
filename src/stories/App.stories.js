@@ -10,9 +10,9 @@ export default {
       "canvas": { hidden: true },
     },
     viewMode: "story",
+    layout: "fullscreen",
   },
 };
-
 export const AllComponentsPreview = (args) => {
   return <App {...args} />;
 };
