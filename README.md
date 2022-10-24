@@ -19,3 +19,7 @@
   - **#000** - HEX colors
 
   - **rgba(100,100,100,0.5)** - RGBA, RGB, HSL etc.
+
+## **Library preview**
+
+![image](./preview-anim.gif)
