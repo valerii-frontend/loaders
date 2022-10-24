@@ -20,7 +20,7 @@
 
   - **rgba(100,100,100,0.5)** - RGBA, RGB, HSL etc.
 
-- `_width` (border-width) - **number** in pixels
+- `_width` (border-width) - optional **number** in pixels
 
 - `count` (elements count) - optional **number**
 
