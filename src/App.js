@@ -60,7 +60,7 @@ function App() {
         <div className='col'>
           <h2>Text</h2>
           <div>
-            <Text color='#FFAE21' size='md' speed='1500' text='Loading' uppercase />
+            <Text color='#FFAE21' size='md' speed='1500' text='Loading' uppercase='true' pulse='true' />
           </div>
         </div>
         <div className='col'>

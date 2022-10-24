@@ -336,22 +336,25 @@ const ScaleStyled = styled.div`
   }
 `;
 const TextStyled = styled.div`
-  --size: ${({ size }) => (size === "sm" ? 20 : size === "md" ? 30 : size === "lg" ? 40 : 30)}px;
-  --speed: ${({ speed }) => (speed >= 500 && speed <= 3000 ? speed : 1500)}ms;
+  --size: ${({ size }) => (size >= 12 && size <= 100 ? size : 30)}px;
+  --speed: ${({ speed }) => (speed >= 500 && speed <= 6000 ? speed : 1500)}ms;
   --color: ${({ color }) => color};
-  --uppercase: ${({ uppercase }) => (uppercase ? "uppercase" : "normal")};
-  text-transform: var(--uppercase);
+  --pulse: ${({ pulse }) => (pulse === "true" ? "textJump calc(var(--speed) / 2) linear infinite alternate" : "none")};
+  text-transform: ${({ uppercase }) => (uppercase === "true" ? "uppercase" : "normal")};
   letter-spacing: 2px;
   line-height: 100%;
-  position: relative;
   font-weight: 700;
-  & span {
+  animation: var(--pulse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & p {
     font-family: monospace;
     font-size: var(--size);
     color: rgba(255, 255, 255, 0.2);
-    animation: scale calc(var(--speed) / 2) linear infinite alternate;
-    display: flex;
+    display: inline-flex;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
     &:after {
       content: "${({ text }) => text ?? "Loading"}";
       position: absolute;
@@ -360,11 +363,11 @@ const TextStyled = styled.div`
       left: 0;
       color: var(--color, green);
       text-shadow: 1px 0 0 black, 0 1px 0 black, -1px 0 0 black, 0 -1px 0 black;
-      animation: text var(--speed) linear infinite;
+      animation: textFill var(--speed) linear infinite;
       z-index: 1;
     }
   }
-  @keyframes scale {
+  @keyframes textJump {
     from {
       transform: scale(1);
     }
@@ -372,7 +375,7 @@ const TextStyled = styled.div`
       transform: scale(1.1);
     }
   }
-  @keyframes text {
+  @keyframes textFill {
     from {
       clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     }
@@ -494,10 +497,10 @@ export const Ring = ({ size, _width, color, speed }) => {
 export const Scale = ({ size, _width, color, color2, speed }) => {
   return <ScaleStyled size={size} _width={_width} color={color} color2={color2} speed={speed} />;
 };
-export const Text = ({ color, size, speed, text, uppercase }) => {
+export const Text = ({ color, size, speed, text, uppercase, pulse }) => {
   return (
-    <TextStyled color={color} size={size} speed={speed} text={text} uppercase={uppercase}>
-      <span>{text ?? "Loading"}</span>
+    <TextStyled color={color} size={size} speed={speed} text={text} uppercase={uppercase} pulse={pulse}>
+      <p>{text ?? "Loading"}</p>
     </TextStyled>
   );
 };
