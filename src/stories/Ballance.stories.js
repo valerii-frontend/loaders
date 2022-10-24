@@ -1,4 +1,4 @@
-import Ballance from "../Loaders";
+import { Ballance } from "../Loaders";
 
 export default {
   title: "Loaders/Ballance",
@@ -45,5 +45,5 @@ export default {
 };
 
 export const BallanceLoader = (args) => {
-  return <Ballance color='black' {...args} />;
+  return <Ballance {...args} />;
 };

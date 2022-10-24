@@ -1,4 +1,4 @@
-import Bars from "../components/Bars";
+import { Bars } from "../Loaders";
 
 export default {
   title: "Loaders/Bars",
